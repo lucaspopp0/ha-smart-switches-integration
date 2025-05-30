@@ -1,11 +1,11 @@
 """
-The "hello world" custom component.
+The "smart_switches" custom component.
 
 This component implements the bare minimum that a component should implement.
 
 Configuration:
 
-To use the hello_world component you will need to add the following to your
+To use the smart_switches component you will need to add the following to your
 configuration.yaml file.
 
 hello_world_async:
