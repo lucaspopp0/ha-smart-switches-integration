@@ -142,8 +142,8 @@ jobs:
           VERSION_TAG: ${{ steps.output-tags.outputs.INCRM }}
           COMMIT_MESSAGE: '${{ steps.commit-message.outputs.hash }} ${{ steps.commit-message.outputs.message }}'
         run: |
-          ./smart-switches/scripts/changelog.sh \
-            | tee smart-switches/CHANGELOG.md
+          .//scripts/changelog.sh \
+            | tee CHANGELOG.md
       -
         name: "Update tags (DRY_RUN=${{ env.DRY_RUN }})"
         run: |
