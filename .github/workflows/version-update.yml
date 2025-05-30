@@ -137,6 +137,16 @@ jobs:
           git fetch --all
           git checkout "${{ github.head_ref || github.ref_name }}"
       -
+        name: Update manifest files
+        run: |
+          while IFS='' read -r component || [[ -n "$component" ]]; do
+            manifest_json="custom_components/$component/manifest.json"
+            jq -r \
+              '.version = "${{ steps.output-tags.outputs.INCRM }}"' \
+              "$manifest_json" \
+              > "$manifest_json"
+          done <(ls -1 custom_components)
+      -
         name: Update CHANGELOG.md
         env:
           VERSION_TAG: ${{ steps.output-tags.outputs.INCRM }}
