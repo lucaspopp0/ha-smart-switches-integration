@@ -140,11 +140,13 @@ jobs:
         name: Update manifest files
         run: |
           while IFS='' read -r component || [[ -n "$component" ]]; do
-            manifest_json="custom_components/$component/manifest.json"
-            jq -r \
+            MANIFEST_FILE="custom_components/$component/manifest.json"
+
+            MANIFEST_JSON=$(jq -r \
               '.version = "${{ steps.output-tags.outputs.INCRM }}"' \
-              "$manifest_json" \
-              > "$manifest_json"
+              "$MANIFEST_FILE")
+
+            printf '%s' "$MANIFEST_JSON" > "$MANIFEST_FILE"
           done < <(ls -1 custom_components)
       -
         name: Update CHANGELOG.md
