@@ -1,6 +1,9 @@
-# v0.0.6.0
- * [`7b30e25`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/7b30e25) require homeassistant
+# v0.0.7.0
+ * [`7c22985`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/7c22985) new integration, with config flow
 
+ * [`7c22985`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/7c22985) new integration, with config flow
+
+# v0.0.6.0
  * [`7b30e25`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/7b30e25) require homeassistant
 
 # v0.0.5.0
