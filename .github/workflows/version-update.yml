@@ -145,14 +145,14 @@ jobs:
               '.version = "${{ steps.output-tags.outputs.INCRM }}"' \
               "$manifest_json" \
               > "$manifest_json"
-          done <(ls -1 custom_components)
+          done < <(ls -1 custom_components)
       -
         name: Update CHANGELOG.md
         env:
           VERSION_TAG: ${{ steps.output-tags.outputs.INCRM }}
           COMMIT_MESSAGE: '[`${{ steps.commit-message.outputs.hash }}`](${{ github.server_url }}/${{ github.repository }}/commit/${{ steps.commit-message.outputs.hash }}) ${{ steps.commit-message.outputs.message }}'
         run: |
-          .//scripts/changelog.sh \
+          ./scripts/changelog.sh \
             | tee CHANGELOG.md
       -
         name: "Commit changes and push (DRY_RUN=${{ env.DRY_RUN }})"
