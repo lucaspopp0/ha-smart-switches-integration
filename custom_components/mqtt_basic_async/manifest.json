@@ -4,6 +4,7 @@
   "codeowners": [],
   "dependencies": ["mqtt"],
   "documentation": "https://github.com/home-assistant/example-custom-config/tree/master/custom_components/mqtt_basic_async/",
+  "issue_tracker": "https://github.com/home-assistant/example-custom-config/issues",
   "iot_class": "local_polling",
   "requirements": [],
   "version": "0.1.0"
