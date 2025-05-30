@@ -1,6 +1,10 @@
-# v0.0.3.0
- * [`323790f`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/323790f) commit changelog updates
+# v0.0.4.1
+ * [`2cd76cd`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2cd76cd) substitution fix
 
+ * [`2cd76cd`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2cd76cd) substitution fix
+ * [`2fa46de`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2fa46de) update manifest files directly using jq
+
+# v0.0.3.0
  * [`323790f`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/323790f) commit changelog updates
  * [`68966c4`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/68966c4) workflow improvement
  * [`c4387c5`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/c4387c5) changelog script improvement
