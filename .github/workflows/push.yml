@@ -1,0 +1,27 @@
+name: push
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: read
+  id-token: write
+  packages: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+
+  detect-changes:
+    uses: ./.github/workflows/detect-changes.yml
+    secrets: inherit
+
+  version-update:
+    needs: detect-changes
+    if: ${{ needs.detect-changes.outputs.bot-change == 'false' && (needs.detect-changes.outputs.custom_components_changed == 'true' || needs.detect-changes.outputs.workflows_changed == 'true') }}
+    uses: ./.github/workflows/version-update.yml
+    secrets: inherit

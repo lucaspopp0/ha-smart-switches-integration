@@ -1,0 +1,64 @@
+name: detect-changes
+
+on:
+  workflow_call:
+    outputs:
+      bot-change:
+        description: Was this change committed by a bot?
+        value: ${{ jobs.detect-changes.outputs.bot-change }}
+      changes:
+        description: "A JSON array of changed filters"
+        value: ${{ jobs.detect-changes.outputs.changes }}
+      custom_components_changed:
+        description: "Custom components changed?"
+        value: ${{ contains(fromJson(jobs.detect-changes.outputs.changes), 'custom_components' )}}
+      hacs_json_changed:
+        description: "hacs.json changed?"
+        value: ${{ contains(fromJson(jobs.detect-changes.outputs.changes), 'hacs_json')}}
+      workflows_changed:
+        description: "Workflows changed?"
+        value: ${{ contains(fromJson(jobs.detect-changes.outputs.changes), 'workflows' )}}
+      hacs_validate_changed:
+        description: "HACS validate workflow changed?"
+        value: ${{ contains(fromJson(jobs.detect-changes.outputs.changes), 'hacs-validate' )}}
+      version_update_changed:
+        description: "Version update workflow changed?"
+        value: ${{ contains(fromJson(jobs.detect-changes.outputs.changes), 'version-update' )}}
+
+permissions:
+  contents: read
+  pull-requests: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+
+  detect-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      bot-change: ${{ steps.detect-bot.outputs.detected }}
+      changes: ${{ steps.path-filters.outputs.changes }}
+    steps:
+      -
+        name: Detect bot
+        id: detect-bot
+        run: |
+          echo "detected=${{ github.actor == 'lucaspopp0-bot[bot]' }}" | tee -a "$GITHUB_OUTPUT"
+      -
+        uses: actions/checkout@v4
+      -
+        name: Detect changes
+        uses: dorny/paths-filter@v3
+        id: path-filters
+        with:
+          filters: |
+            custom_components:
+              - 'custom_components/**'
+            workflows:
+              - '.github/workflows/**'
+            hacs-validate:
+              - '.github/workflows/hacs-validate.yml'
+            version-update:
+              - '.github/workflows/version-update.yml'
