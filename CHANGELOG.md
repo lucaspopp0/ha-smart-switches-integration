@@ -1,6 +1,9 @@
-# v0.0.7.0
- * [`7c22985`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/7c22985) new integration, with config flow
+# v0.0.8.0
+ * [`78be167`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/78be167) delete manifests
 
+ * [`78be167`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/78be167) delete manifests
+
+# v0.0.7.0
  * [`7c22985`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/7c22985) new integration, with config flow
 
 # v0.0.6.0
