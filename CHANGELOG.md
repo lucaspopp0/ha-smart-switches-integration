@@ -1,6 +1,9 @@
-# v0.0.4.1
- * [`2cd76cd`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2cd76cd) substitution fix
+# v0.0.5.0
+ * [`3295588`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/3295588) read and write separately
 
+ * [`3295588`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/3295588) read and write separately
+
+# v0.0.4.1
  * [`2cd76cd`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2cd76cd) substitution fix
  * [`2fa46de`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2fa46de) update manifest files directly using jq
 

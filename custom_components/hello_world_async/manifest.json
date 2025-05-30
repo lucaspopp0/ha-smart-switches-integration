@@ -7,5 +7,5 @@
   "issue_tracker": "https://github.com/home-assistant/example-custom-config/issues",
   "iot_class": "local_polling",
   "requirements": [],
-  "version": "0.1.0"
+  "version": "v0.0.5.0"
 }
