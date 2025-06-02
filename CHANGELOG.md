@@ -1,6 +1,9 @@
-# v0.0.11.0
- * [`f808761`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/f808761) chore: Try using the integration generator (#3)
+# v0.0.12.0
+ * [`2cfd872`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2cfd872) chore: Bluetooth scanning (#4)
 
+ * [`2cfd872`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2cfd872) chore: Bluetooth scanning (#4)
+
+# v0.0.11.0
  * [`f808761`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/f808761) chore: Try using the integration generator (#3)
 
 # v0.0.10.0
