@@ -1,6 +1,9 @@
-# v0.0.9.0
- * [`dbce15b`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/dbce15b) basic config flow
+# v0.0.10.0
+ * [`76aa9d2`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/76aa9d2) rename domain
 
+ * [`76aa9d2`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/76aa9d2) rename domain
+
+# v0.0.9.0
  * [`dbce15b`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/dbce15b) basic config flow
 
 # v0.0.8.0
