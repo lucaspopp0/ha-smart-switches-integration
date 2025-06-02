@@ -1,13 +1,33 @@
 {
   "config": {
     "step": {
+      "user": {
+        "title": "Smart Switches",
+        "description": "Scan for Bluetooth devices with 'Smart Switch' in their name."
+      },
+      "device_selection": {
+        "title": "Select Smart Switch Device",
+        "description": "Choose which Smart Switch device to add:",
+        "data": {
+          "device": "Device"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Smart Switch found via Bluetooth",
+        "description": "Do you want to set up {name}?"
+      },
       "confirm": {
         "description": "[%key:common::config_flow::description::confirm_setup%]"
       }
     },
+    "error": {
+      "no_devices_found": "No Smart Switch devices found. Make sure your devices are powered on and in pairing mode."
+    },
     "abort": {
       "single_instance_allowed": "[%key:common::config_flow::abort::single_instance_allowed%]",
-      "no_devices_found": "[%key:common::config_flow::abort::no_devices_found%]"
+      "no_devices_found": "[%key:common::config_flow::abort::no_devices_found%]",
+      "not_smart_switch": "Device does not appear to be a Smart Switch.",
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
     }
   }
 }
