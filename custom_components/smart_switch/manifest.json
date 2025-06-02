@@ -1,10 +1,12 @@
 {
   "domain": "smart_switch",
   "name": "Smart Switches",
-  "codeowners": [],
+  "codeowners": ["@lucaspopp0"],
+  "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/lucaspopp0/ha-smart-switches-integration",
   "issue_tracker": "https://github.com/lucaspopp0/ha-smart-switches-integration/issues",
+  "homekit": {},
   "iot_class": "local_polling",
   "requirements": [],
   "version": "v0.0.10.0",

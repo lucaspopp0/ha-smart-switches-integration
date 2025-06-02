@@ -1,31 +1,29 @@
-"""
-The "smart_switch" custom component.
+"""The Smart Switches integration."""
 
-This component implements the bare minimum that a component should implement.
-
-Configuration:
-
-To use the smart_switch component you will need to add the following to your
-configuration.yaml file.
-
-hello_world_async:
-"""
 from __future__ import annotations
 
-import asyncio
-
+from homeassistant.config_entries import ConfigEntry
+from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
-from homeassistant.helpers.typing import ConfigType
 
-# The domain of your component. Should be equal to the name of your component.
-DOMAIN = "hello_world_async"
+# TODO List the platforms that you want to support.
+# For your initial PR, limit it to 1 platform.
+# _PLATFORMS: list[Platform] = [Platform.BINARY_SENSOR]
+
+# TODO Create ConfigEntry type alias with API object
+# Alias name should be prefixed by integration name
+# type New_NameConfigEntry = ConfigEntry[MyApi]  # noqa: F821
 
 
-@asyncio.coroutine
-def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
-    """Setup our skeleton component."""
-    # States are in the format DOMAIN.OBJECT_ID.
-    hass.states.async_set('hello_world_async.Hello_World', 'Works!')
+# TODO Update entry annotation
+async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
+    """Set up Smart Switches from a config entry."""
 
-    # Return boolean to indicate that initialization was successfully.
+    # TODO 1. Create API instance
+    # TODO 2. Validate the API connection (and authentication)
+    # TODO 3. Store an API object for your platforms to access
+    # entry.runtime_data = MyAPI(...)
+
+    # await hass.config_entries.async_forward_entry_setups(entry, _PLATFORMS)
+
     return True

@@ -1,10 +1,15 @@
-from homeassistant import config_entries
+"""Config flow for the Smart Switches integration."""
 
-DOMAIN="smart_switches"
+from homeassistant.core import HomeAssistant
+from homeassistant.helpers import config_entry_flow
 
-class ExampleConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Example config flow."""
-    # The schema version of the entries that it creates
-    # Home Assistant will call your migrate method if the version changes
-    VERSION = 1
-    MINOR_VERSION = 1
+from .const import DOMAIN
+
+async def _async_has_devices(hass: HomeAssistant) -> bool:
+    # """Return if there are devices that can be discovered."""
+    # # TODO Check if there are any devices that can be discovered in the network.
+    # devices = await hass.async_add_executor_job(my_pypi_dependency.discover)
+    # return len(devices) > 0
+    return False
+
+config_entry_flow.register_discovery_flow(DOMAIN, "Smart Switches", _async_has_devices)

@@ -1,0 +1,14 @@
+{
+    "name": "Smart Switches Integration Devcontainer",
+    "dockerFile": "../Dockerfile.dev",
+    "customizations": {
+        "vscode": {
+        "extensions": [
+            "ms-python.pylint",
+            "ms-python.vscode-pylance",
+            "visualstudioexptteam.vscodeintellicode",
+            "redhat.vscode-yaml",
+            "esbenp.prettier-vscode"
+        ]
+    }
+}
