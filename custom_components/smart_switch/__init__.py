@@ -1,11 +1,11 @@
 """
-The "smart_switches" custom component.
+The "smart_switch" custom component.
 
 This component implements the bare minimum that a component should implement.
 
 Configuration:
 
-To use the smart_switches component you will need to add the following to your
+To use the smart_switch component you will need to add the following to your
 configuration.yaml file.
 
 hello_world_async:
