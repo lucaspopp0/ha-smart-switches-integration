@@ -1,6 +1,9 @@
-# v0.0.10.0
- * [`76aa9d2`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/76aa9d2) rename domain
+# v0.0.11.0
+ * [`f808761`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/f808761) chore: Try using the integration generator (#3)
 
+ * [`f808761`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/f808761) chore: Try using the integration generator (#3)
+
+# v0.0.10.0
  * [`76aa9d2`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/76aa9d2) rename domain
 
 # v0.0.9.0
