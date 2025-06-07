@@ -11,6 +11,8 @@ from homeassistant.config_entries import ConfigFlow, ConfigFlowResult
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers import config_entry_flow
 
+from collections import OrderedDict
+
 from .const import DOMAIN
 
 _LOGGER = logging.getLogger(__name__)
@@ -23,3 +25,17 @@ class SmartSwitchConfigFlow(ConfigFlow, domain=DOMAIN):
     def __init__(self) -> None:
         """Initialize the config flow."""
         self.id = DOMAIN
+
+    async def async_step_only_step(self, user_input):
+        fields: OrderedDict[vol.Marker, Any] = OrderedDict()
+
+        return self.async_show_form(
+            step_id="only_step",
+            data_schema=vol.Schema(fields),
+            errors={},
+            last_step=True,
+        )
+
+    def is_matching(self, other_flow: SmartSwitchConfigFlow) -> bool:
+        """Return True if other_flow is matching this flow."""
+        return other_flow.id == self.id
