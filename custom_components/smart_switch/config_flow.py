@@ -38,4 +38,4 @@ class SmartSwitchConfigFlow(ConfigFlow, domain=DOMAIN):
 
     def is_matching(self, other_flow: SmartSwitchConfigFlow) -> bool:
         """Return True if other_flow is matching this flow."""
-        return self.id == DOMAIN
+        return other_flow.id == self.id
