@@ -1,6 +1,9 @@
-# v0.0.13.0
- * [`2e4acc2`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2e4acc2) fix: Simplify the config flow, removing bluetooth scanning (#5)
+# v0.0.14.0
+ * [`9ac8833`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/9ac8833) chore: Use bluetooth callbacks (#6)
 
+ * [`9ac8833`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/9ac8833) chore: Use bluetooth callbacks (#6)
+
+# v0.0.13.0
  * [`2e4acc2`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2e4acc2) fix: Simplify the config flow, removing bluetooth scanning (#5)
 
 # v0.0.12.0
