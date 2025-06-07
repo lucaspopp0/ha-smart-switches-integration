@@ -26,4 +26,15 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
 
     await hass.config_entries.async_forward_entry_setups(entry, _PLATFORMS)
 
+    @callback
+    def _async_discovered_device(service_info: bluetooth.BluetoothServiceInfoBleak, change: bluetooth.BluetoothChange) -> None:
+        """Subscribe to bluetooth changes."""
+        _LOGGER.warning("New service_info: %s", service_info)
+
+    entry.async_on_unload(
+        bluetooth.async_register_callback(
+            hass, _async_discovered_device, {"connectable": True}, bluetooth.BluetoothScanningMode.ACTIVE,
+        )
+    )
+
     return True
