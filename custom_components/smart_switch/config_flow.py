@@ -26,16 +26,13 @@ class SmartSwitchConfigFlow(ConfigFlow, domain=DOMAIN):
         """Initialize the config flow."""
         self.id = DOMAIN
 
-    async def async_step_only_step(self, user_input):
-        fields: OrderedDict[vol.Marker, Any] = OrderedDict()
+    async def async_step_user(
+        self, user_input: dict[str, Any] | None = None
+    ) -> ConfigFlowResult:
+        """Handle the initial step."""
+        if user_input is not None:
+            await self.async_set_unique_id(DOMAIN)
+            self._abort_if_unique_id_configured()
+            return self.async_create_entry(title="Smart Switches", data={})
 
-        return self.async_show_form(
-            step_id="only_step",
-            data_schema=vol.Schema(fields),
-            errors={},
-            last_step=True,
-        )
-
-    def is_matching(self, other_flow: SmartSwitchConfigFlow) -> bool:
-        """Return True if other_flow is matching this flow."""
-        return other_flow.id == self.id
+        return self.async_show_form(step_id="user")
