@@ -1,6 +1,10 @@
-# v0.0.15.1
- * [`2415f07`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2415f07) improve config flow and update dockerfile
+# v0.0.16.1
+ * [`8f755c2`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/8f755c2) sensor platform
 
+ * [`8f755c2`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/8f755c2) sensor platform
+ * [`715a42e`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/715a42e) devcontainer improvements
+
+# v0.0.15.1
  * [`2415f07`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2415f07) improve config flow and update dockerfile
  * [`8214382`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/8214382) simplify dockerfile
 
