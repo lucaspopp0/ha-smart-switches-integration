@@ -1,6 +1,10 @@
-# v0.0.14.0
- * [`9ac8833`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/9ac8833) chore: Use bluetooth callbacks (#6)
+# v0.0.15.1
+ * [`2415f07`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2415f07) improve config flow and update dockerfile
 
+ * [`2415f07`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/2415f07) improve config flow and update dockerfile
+ * [`8214382`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/8214382) simplify dockerfile
+
+# v0.0.14.0
  * [`9ac8833`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/9ac8833) chore: Use bluetooth callbacks (#6)
 
 # v0.0.13.0
