@@ -3,10 +3,5 @@ FROM mcr.microsoft.com/devcontainers/python:1-3.13
 WORKDIR /devcontainers
 COPY . /devcontainers/
 
-# Setup a python virtual environment
-RUN python -m venv .venv
-ENV PATH=".venv/bin:$PATH"
-
 # Install home assistant in the new virtual environment
 RUN pip install homeassistant
-RUN echo "source /devcontainers/.venv/bin/activate" >> /etc/bash.bashrc
