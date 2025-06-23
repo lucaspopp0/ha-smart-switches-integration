@@ -1,6 +1,9 @@
-# v0.0.18.0
- * [`1d88669`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/1d88669) fix syntax issue
+# v0.0.19.0
+ * [`d945047`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/d945047) set discovered infos correctly :)
 
+ * [`d945047`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/d945047) set discovered infos correctly :)
+
+# v0.0.18.0
  * [`1d88669`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/1d88669) fix syntax issue
 
 # v0.0.17.2
