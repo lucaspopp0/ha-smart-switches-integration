@@ -12,10 +12,7 @@ from homeassistant.data_entry_flow import AbortFlow
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers import config_entry_flow
 
-from homeassistant.components.bluetooth import (
-    BluetoothServiceInfoBleak,
-    async_discovered_service_info,
-)
+from homeassistant.components import bluetooth
 
 from collections import OrderedDict
 
@@ -35,10 +32,10 @@ class SmartSwitchConfigFlow(ConfigFlow, domain=DOMAIN):
     def __init__(self) -> None:
         """Initialize the config flow."""
         self.id = DOMAIN
-        self.discovered_info: BluetoothServiceInfoBleak | None = None
-        self.discovered_infos: dict[str, BluetoothServiceInfoBleak] = {}
+        self.discovered_info: bluetooth.BluetoothServiceInfoBleak | None = None
+        self.discovered_infos: dict[str, bluetooth.BluetoothServiceInfoBleak] = {}
 
-    async def _async_set_device(self, discovery_info: BluetoothServiceInfoBleak) -> None:
+    async def _async_set_device(self, discovery_info: bluetooth.BluetoothServiceInfoBleak) -> None:
         """Set the device to work with"""
         self.discovered_info = discovery_info
         await self.async_set_unique_id(
@@ -56,7 +53,7 @@ class SmartSwitchConfigFlow(ConfigFlow, domain=DOMAIN):
             await self._async_set_device(discovery_info)
             return await self._async_create_entry_from_discovery(user_input)
 
-        self._discover_devices()
+        await self._async_discover_devices()
         return self.async_show_form(
             step_id="user",
             data_schema=vol.Schema(
@@ -71,10 +68,13 @@ class SmartSwitchConfigFlow(ConfigFlow, domain=DOMAIN):
             )
         )
     
-    def _discover_devices(self) -> None:
+    async def _async_discover_devices(self) -> None:
+        scanner = bluetooth.async_get_scanner(self.hass)
+        await scanner.discover(timeout=5)
+
         current_addresses = self._async_current_ids(include_ignore=False)
         for connectable in (True, False):
-            for discovery_info in async_discovered_service_info(self.hass, connectable):
+            for discovery_info in bluetooth.async_discovered_service_info(self.hass, connectable):
                 # Ignore all devices without "Smart Switch" in the name
                 if discovery_info.name.find("Smart Switch") == -1:
                     continue
@@ -95,7 +95,7 @@ class SmartSwitchConfigFlow(ConfigFlow, domain=DOMAIN):
             raise AbortFlow("no_devices_found")
         
     async def async_step_bluetooth(
-            self, discovery_info: BluetoothServiceInfoBleak,
+            self, discovery_info: bluetooth.BluetoothServiceInfoBleak,
     ) -> ConfigFlowResult:
         """Bluetooth discovery step"""
         _LOGGER.debug("Discovered bluetooth device: %s", discovery_info.as_dict())
