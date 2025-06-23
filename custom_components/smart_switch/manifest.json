@@ -13,5 +13,5 @@
   "homekit": {},
   "iot_class": "local_polling",
   "requirements": [],
-  "version": "v0.0.17.2"
+  "version": "v0.0.18.0"
 }

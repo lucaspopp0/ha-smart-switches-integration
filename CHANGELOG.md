@@ -1,6 +1,9 @@
-# v0.0.17.2
- * [`32d4b3f`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/32d4b3f) config flow update?
+# v0.0.18.0
+ * [`1d88669`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/1d88669) fix syntax issue
 
+ * [`1d88669`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/1d88669) fix syntax issue
+
+# v0.0.17.2
  * [`32d4b3f`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/32d4b3f) config flow update?
  * [`ce76317`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/ce76317) chore(deps): update dependency async_interrupt to v1.2.2 (#8)
  * [`921c2b6`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/921c2b6) copy examples repo over
