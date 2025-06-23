@@ -85,7 +85,7 @@ class SmartSwitchConfigFlow(ConfigFlow, domain=DOMAIN):
                 print(discovery_info)
 
                 if discovery_info.connectable:
-                    self.discovered_infos = discovery_info
+                    self.discovered_infos[address] = discovery_info
 
         if not self.discovered_infos:
             raise AbortFlow("no_devices_found")
