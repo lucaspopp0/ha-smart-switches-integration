@@ -1,6 +1,9 @@
-# v0.0.20.0
- * [`a720ca7`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/a720ca7) filter devices
+# v0.0.21.0
+ * [`ca6721b`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/ca6721b) discover on config
 
+ * [`ca6721b`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/ca6721b) discover on config
+
+# v0.0.20.0
  * [`a720ca7`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/a720ca7) filter devices
 
 # v0.0.19.0
