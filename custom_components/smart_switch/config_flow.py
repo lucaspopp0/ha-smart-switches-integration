@@ -75,6 +75,10 @@ class SmartSwitchConfigFlow(ConfigFlow, domain=DOMAIN):
         current_addresses = self._async_current_ids(include_ignore=False)
         for connectable in (True, False):
             for discovery_info in async_discovered_service_info(self.hass, connectable):
+                # Ignore all devices without "Smart Switch" in the name
+                if discovery_info.name.find("Smart Switch") == -1:
+                    continue
+
                 address = discovery_info.address
                 if (
                     format_unique_id(address) in current_addresses
