@@ -78,7 +78,7 @@ class SmartSwitchConfigFlow(ConfigFlow, domain=DOMAIN):
                 address = discovery_info.address
                 if (
                     format_unique_id(address) in current_addresses
-                    or address in self.discovered_infos
+                    or address in self.discovered_infos.keys()
                 ):
                     continue
 
