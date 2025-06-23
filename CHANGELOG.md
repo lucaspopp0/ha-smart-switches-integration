@@ -1,6 +1,11 @@
-# v0.0.16.1
- * [`8f755c2`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/8f755c2) sensor platform
+# v0.0.17.2
+ * [`32d4b3f`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/32d4b3f) config flow update?
 
+ * [`32d4b3f`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/32d4b3f) config flow update?
+ * [`ce76317`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/ce76317) chore(deps): update dependency async_interrupt to v1.2.2 (#8)
+ * [`921c2b6`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/921c2b6) copy examples repo over
+
+# v0.0.16.1
  * [`8f755c2`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/8f755c2) sensor platform
  * [`715a42e`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/715a42e) devcontainer improvements
 
