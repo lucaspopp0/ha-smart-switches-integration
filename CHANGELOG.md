@@ -1,6 +1,9 @@
-# v0.0.19.0
- * [`d945047`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/d945047) set discovered infos correctly :)
+# v0.0.20.0
+ * [`a720ca7`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/a720ca7) filter devices
 
+ * [`a720ca7`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/a720ca7) filter devices
+
+# v0.0.19.0
  * [`d945047`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/d945047) set discovered infos correctly :)
 
 # v0.0.18.0
