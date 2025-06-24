@@ -1,6 +1,9 @@
-# v0.0.22.0
- * [`50f1730`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/50f1730) simplify config flow
+# v0.0.23.0
+ * [`8b9dd90`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/8b9dd90) use empty object instead of none
 
+ * [`8b9dd90`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/8b9dd90) use empty object instead of none
+
+# v0.0.22.0
  * [`50f1730`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/50f1730) simplify config flow
 
 # v0.0.21.0
