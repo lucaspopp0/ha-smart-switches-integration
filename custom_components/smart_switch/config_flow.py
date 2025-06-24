@@ -42,5 +42,5 @@ class SmartSwitchesConfigFlow(ConfigFlow, domain=DOMAIN):
 
         return self.async_create_entry(
             title="Smart Switches",
-            data=None,
+            data={},
         )
