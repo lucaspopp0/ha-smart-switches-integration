@@ -1,6 +1,9 @@
-# v0.0.21.0
- * [`ca6721b`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/ca6721b) discover on config
+# v0.0.22.0
+ * [`50f1730`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/50f1730) simplify config flow
 
+ * [`50f1730`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/50f1730) simplify config flow
+
+# v0.0.21.0
  * [`ca6721b`](https://github.com/lucaspopp0/ha-smart-switches-integration/commit/ca6721b) discover on config
 
 # v0.0.20.0
