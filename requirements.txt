@@ -72,7 +72,7 @@ python-dateutil==2.9.0.post0
 python-slugify==8.0.4
 pytz==2025.2
 PyYAML==6.0.2
-requests==2.32.3
+requests==2.32.4
 s3transfer==0.13.0
 securetar==2024.11.0
 setuptools==80.9.0
