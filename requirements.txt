@@ -1,5 +1,5 @@
 acme==3.3.0
-aiodns==3.2.0
+aiodns==3.5.0
 aiohappyeyeballs==2.6.1
 aiohasupervisor==0.2.2b5
 aiohttp==3.11.11
