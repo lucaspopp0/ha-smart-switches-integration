@@ -1,7 +1,7 @@
 acme==3.3.0
 aiodns==3.5.0
 aiohappyeyeballs==2.6.1
-aiohasupervisor==0.2.2b5
+aiohasupervisor==0.3.1
 aiohttp==3.12.13
 aiohttp-cors==0.7.0
 aiohttp-fast-zlib==0.2.0
