@@ -6,7 +6,7 @@ aiohttp==3.12.13
 aiohttp-cors==0.7.0
 aiohttp-fast-zlib==0.2.0
 aiooui==0.1.9
-aiosignal==1.3.2
+aiosignal==1.4.0
 aiozoneinfo==0.2.1
 anyio==4.9.0
 astral==2.2
