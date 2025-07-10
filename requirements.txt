@@ -54,7 +54,7 @@ multidict==6.6.3
 orjson==3.10.18
 packaging==25.0
 pillow==11.3.0
-propcache==0.2.1
+propcache==0.3.2
 psutil==7.0.0
 psutil-home-assistant==0.0.1
 pycares==4.9.0
