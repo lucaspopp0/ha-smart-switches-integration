@@ -1,6 +1,6 @@
 acme==3.3.0
 aiodns==3.6.1
-aiohappyeyeballs==2.6.1
+aiohappyeyeballs==2.7.1
 aiohasupervisor==0.2.2b5
 aiohttp==3.12.13
 aiohttp-cors==0.7.0
