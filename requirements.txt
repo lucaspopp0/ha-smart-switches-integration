@@ -37,7 +37,7 @@ frozenlist==1.7.0
 greenlet==3.2.3
 h11==0.16.0
 habluetooth==3.49.0
-hass-nabucasa==0.87.0
+hass-nabucasa==0.111.2
 home-assistant-bluetooth==1.13.1
 homeassistant==2025.7.1
 httpcore==1.0.9
